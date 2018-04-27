@@ -1,3 +1,7 @@
-import React from "react"
+import React from 'react'
+import css from './index.scss'
 
-export default () => <div>Brandon</div>
+export default () =>
+  <div>
+    <p>B</p>
+  </div>
