@@ -1,0 +1,19 @@
+.icon {
+  width: 30px;
+  height: 30px;
+  border: 1px solid grey;
+  margin-left: 10px;
+  flex: 0.2
+}
+
+.footer {
+  display: flex;
+}
+
+.phrase {
+  flex: 0.5;
+
+  p {
+    margin: 10px 0;
+  }
+}
