@@ -6,7 +6,8 @@ export default () =>
   <div>
     <h2>B</h2>
     <p>At the intersection of Technology, Business, and Human Experience</p>
-    <Link to='/about'>About</Link>
-    <br />
-    <Link to='/work'>Work</Link>
+    <div className={css.link_container}>
+      <Link to='/about'>About</Link>
+      <Link to='/work'>Work</Link>
+    </div>
 </div>

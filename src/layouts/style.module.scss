@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400');
+
 .app_container {
   margin: 0 auto;
   max-width: 650px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .content_container {
@@ -11,13 +14,17 @@
   height: 40vh;
   background-color: #3a96ec;
   position: relative;
+  padding: 0 1rem;
 
-  h1, .title {
+  h1, .subtitle {
     color: white;
     margin: 0;
   }
 
-  .title {
+  .subtitle {
+    font-weight: normal;
+    text-transform: capitalize;
+    font-size: 4rem;
     bottom: 0;
     position: absolute;
   }
