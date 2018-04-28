@@ -1,5 +1,21 @@
-.layout {
+.content_container {
   margin: 0 auto;
   max-width: 650px;
   padding: 0 2rem;
+}
+
+.top {
+  height: 40vh;
+  background-color: #3a96ec;
+  position: relative;
+
+  h1, .title {
+    color: white;
+    margin: 0;
+  }
+
+  .title {
+    bottom: 0;
+    position: absolute;
+  }
 }
