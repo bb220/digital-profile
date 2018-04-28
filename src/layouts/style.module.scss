@@ -10,11 +10,19 @@
   padding: 0 2rem;
 }
 
+.object {
+  pointer-events: none;
+}
+
 .top {
   height: 40vh;
   background-color: #3a96ec;
   position: relative;
   padding: 0 1rem;
+
+  a {
+    display: inline-block;
+  }
 
   h1, .subtitle {
     color: white;
