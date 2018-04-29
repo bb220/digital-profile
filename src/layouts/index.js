@@ -11,8 +11,8 @@ export default ({ children, location }) => {
     <div className={css.app_container}>
       <div className={cx({
           [css.top]: true,
-          [css.green]: subtitle === 'work',
-          [css.blue]: subtitle === 'about',
+          [css.work]: subtitle === 'work',
+          [css.about]: subtitle === 'about',
           [css.home]: subtitle === ''
         })}>
         <Link to='/'>
