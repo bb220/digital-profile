@@ -16,10 +16,16 @@
   max-width: 650px;
   margin: 0 auto;
 
+  .email {
+    height: 41px;
+    padding-top: 0;
+  }
+
   img {
     height: 35px;
     margin-left: 1rem;
     margin-top: -2px;
+    padding-top: 3px;
 
     :not(:nth-child(2n)) {
       padding-top: 3px;

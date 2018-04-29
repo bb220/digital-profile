@@ -11,7 +11,7 @@ export default function Footer() {
         <p>Let's collaborate.</p>
       </div>
       <img src={linkedIn} />
-      <img src={email} />
+      <img className={css.email} src={email} />
       <img src={gh} />
     </footer>
   )
