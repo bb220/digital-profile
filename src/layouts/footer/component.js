@@ -1,5 +1,8 @@
 import React from 'react'
 import css from './style.module.scss'
+import linkedIn from './linkedin.png'
+import email from './email.png'
+import gh from './gh.png'
 
 export default function Footer() {
   return (
@@ -7,9 +10,9 @@ export default function Footer() {
       <div className={css.phrase}>
         <p>Let's collaborate.</p>
       </div>
-      <div className={css.icon}></div>
-      <div className={css.icon}></div>
-      <div className={css.icon}></div>
+      <img src={linkedIn} />
+      <img src={email} />
+      <img src={gh} />
     </footer>
   )
 }

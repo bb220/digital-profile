@@ -15,10 +15,21 @@
   right: 0;
   max-width: 650px;
   margin: 0 auto;
+
+  img {
+    height: 35px;
+    margin-left: 1rem;
+    margin-top: -2px;
+
+    :not(:nth-child(2n)) {
+      padding-top: 3px;
+    }
+  }
 }
 
 .phrase {
-  flex: 0.5;
+  flex: 0.7;
+  margin-left: 1rem;
 
   p {
     margin: 10px 0;
