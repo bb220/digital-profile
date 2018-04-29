@@ -14,9 +14,20 @@
   pointer-events: none;
 }
 
+.green {
+  background-color: #51b25c;
+}
+
+.blue {
+  background-color: #3a96ec;
+}
+
+.home {
+  background: linear-gradient(#3a96ec, #51b25c);
+}
+
 .top {
   height: 40vh;
-  background-color: #3a96ec;
   position: relative;
   padding: 0 1rem;
 
