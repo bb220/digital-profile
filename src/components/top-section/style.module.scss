@@ -1,0 +1,26 @@
+.top {
+  height: 40vh;
+  position: relative;
+  padding: 0 1rem;
+
+  a {
+    display: inline-block;
+  }
+
+  h1, .subtitle {
+    color: white;
+    margin: 0;
+  }
+
+  .subtitle {
+    font-weight: normal;
+    text-transform: capitalize;
+    font-size: 4rem;
+    bottom: 0;
+    position: absolute;
+  }
+}
+
+.object {
+  pointer-events: none;
+}
