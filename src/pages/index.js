@@ -3,6 +3,7 @@ import css from './style.module.scss'
 import Link from 'gatsby-link'
 import TopSection from '../components/top-section'
 import Helmet from 'react-helmet'
+// TODO(bb220): use only one svg file
 import logoLarge from './logo-large.svg'
 
 export default () =>
