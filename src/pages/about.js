@@ -3,13 +3,14 @@ import Link from 'gatsby-link'
 import css from './style.module.scss'
 import TopSection from '../components/top-section'
 import Helmet from 'react-helmet'
+import logo from './logo.svg'
 
 export default () =>
   <div>
     <Helmet>
       <title>Brandon Bellero | About</title>
     </Helmet>
-    <TopSection subtitle='about' className={css.about_color} />
+    <TopSection subtitle='about' className={css.about_color} logo={logo} />
     <div className={css.content}>
       <h2>Lorem Ipsum</h2>
       <p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>

@@ -4,7 +4,7 @@
   padding: 0 1rem;
 
   a {
-    display: inline-block;
+    display: block;
   }
 
   h1, .subtitle {
@@ -23,4 +23,11 @@
 
 .object {
   pointer-events: none;
+}
+
+.large {
+  display: block;
+  top: -1rem;
+  left: -2rem;
+  position: relative;
 }
