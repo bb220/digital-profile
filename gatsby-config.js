@@ -23,6 +23,13 @@ module.exports = {
         path: `${__dirname}/src/content/work/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `footer-content`,
+        path: `${__dirname}/src/content/footer/`,
+      },
+    },
     `gatsby-transformer-json`,
     `gatsby-plugin-react-helmet`
   ]

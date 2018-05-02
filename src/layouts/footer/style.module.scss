@@ -15,6 +15,7 @@
   right: 0;
   max-width: 650px;
   margin: 0 auto;
+  justify-content: center;
 
   .email {
     height: 41px;
@@ -35,7 +36,6 @@
 
 .phrase {
   flex: 0.7;
-  margin-left: 1rem;
 
   p {
     margin: 10px 0;

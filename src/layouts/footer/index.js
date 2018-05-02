@@ -4,15 +4,21 @@ import linkedIn from './linkedin.png'
 import email from './email.png'
 import gh from './gh.png'
 
-export default function Footer() {
+export default function Footer ({ data }) {
   return (
     <footer className={css.footer}>
       <div className={css.phrase}>
         <p>Let's collaborate.</p>
       </div>
-      <img src={linkedIn} />
-      <img className={css.email} src={email} />
-      <img src={gh} />
+      <a href={data.linkedInUrl}>
+        <img src={linkedIn} />
+      </a>
+      <a href={`mailto:${data.email}`}>
+        <img className={css.email} src={email} />
+      </a>
+      <a href={data.github}>
+        <img src={gh} />
+      </a>
     </footer>
   )
 }
