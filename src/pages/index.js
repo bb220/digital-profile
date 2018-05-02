@@ -33,9 +33,9 @@ export default ({ data }) => {
 }
 
 export const query = graphql `
-query contentQuery {
+query homeQuery {
   homeJson {
-    subtitle
+    name
     tagline
   }
 }
