@@ -5,8 +5,22 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `content`,
-        path: `${__dirname}/src/content/`,
+        name: `about-content`,
+        path: `${__dirname}/src/content/about/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `home-content`,
+        path: `${__dirname}/src/content/home/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `work-content`,
+        path: `${__dirname}/src/content/work/`,
       },
     },
     `gatsby-transformer-json`,
