@@ -6,6 +6,19 @@
   padding: 0 2rem;
 }
 
+.name, .tagline {
+  font-weight: normal;
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
 .about_color {
   background-color: #d25454;
 }

@@ -8,7 +8,7 @@ import logoLarge from './logo-large.svg'
 
 export default ({ data }) => {
   const {
-    subtitle,
+    name,
     tagline
   } = data.homeJson
 
@@ -21,8 +21,8 @@ export default ({ data }) => {
       </Helmet>
       <TopSection className={css.home_color} logo={logoLarge}/>
       <div className={css.content}>
-        <h2>{subtitle}</h2>
-        <p>{tagline}</p>
+        <h1 className={css.name}>{name}</h1>
+        <p className={css.tagline}>{tagline}</p>
         <div className={css.link_container}>
           <Link to='/about'>About</Link>
           <Link to='/work'>Work</Link>
