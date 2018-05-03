@@ -7,15 +7,12 @@
 }
 
 .footer {
-  display: flex;
   position: fixed;
   bottom: 0;
-  padding: 0 2rem 1rem;
+  padding: 0 0 1rem;
   left: 0;
   right: 0;
   max-width: 650px;
-  margin: 0 auto;
-  justify-content: center;
 
   .email {
     height: 41px;
@@ -34,10 +31,19 @@
   }
 }
 
-.phrase {
-  flex: 0.7;
+.line {
+  height: 1px;
+  width: 80vw;
+  border-bottom: 1px solid lightgray;
+  margin: 0 auto 2vh;
+}
 
-  p {
-    margin: 10px 0;
-  }
+.contact_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.phrase p {
+  margin: 10px 0;
 }
