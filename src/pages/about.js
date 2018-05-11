@@ -8,7 +8,10 @@ import logo from './logo.svg'
 export default ({ data }) => {
   const {
     page,
-    description
+    para1,
+    para2,
+    para3,
+    para4
   } = data.aboutJson
 
   return (
@@ -18,8 +21,11 @@ export default ({ data }) => {
       </Helmet>
       <TopSection subtitle={page} className={css.about_color} logo={logo} />
       <div className={css.content}>
-        <h2>Lorem Ipsum</h2>
-        <p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h2>Hello</h2>
+        <p>{para1}</p>
+        <p>{para2}</p>
+        <p>{para3}</p>
+        <p>{para4}</p>
         <div className={css.link_container}>
           <Link to='/work'>Work</Link>
         </div>
@@ -32,7 +38,10 @@ export const query = graphql `
 query aboutQuery {
   aboutJson {
     page
-    description
+    para1
+    para2
+    para3
+    para4
   }
 }
 `

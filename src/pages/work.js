@@ -22,7 +22,7 @@ export default ({ data }) => {
       <div className={css.content}>
         <h2>{subtitle1}</h2>
         <h2>{subtitle2}</h2>
-        <p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p>{description}</p>
           <div className={css.link_container}>
             <Link to='/about'>About</Link>
           </div>
