@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import css from './style.module.scss'
 import TopSection from '../components/top-section'
 import Helmet from 'react-helmet'
@@ -26,9 +25,6 @@ export default ({ data }) => {
         <p>{para2}</p>
         <p>{para3}</p>
         <p>{para4}</p>
-        <div className={css.link_container}>
-          <Link to='/work'>Work</Link>
-        </div>
       </div>
   </div>
   )

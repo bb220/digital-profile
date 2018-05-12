@@ -39,21 +39,3 @@
 .home_color {
   background-color: #3a96ec;
 }
-
-.link_container {
-  position: absolute;
-  bottom: 13vh;
-  right: 2rem;
-
-  a {
-    display: inline-block;
-    text-align: right;
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: #48b8fd;
-
-    &:not(:first-child) {
-      margin-left: 1.25rem;
-    }
-  }
-}

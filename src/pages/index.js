@@ -23,10 +23,6 @@ export default ({ data }) => {
       <div className={css.content}>
         <h1 className={css.name}>{name}</h1>
         <p className={css.tagline}>{tagline}</p>
-        <div className={css.link_container}>
-          <Link to='/about'>About</Link>
-          <Link to='/work'>Work</Link>
-        </div>
       </div>
   </div>
   )
