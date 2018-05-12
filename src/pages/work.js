@@ -10,7 +10,8 @@ export default ({ data }) => {
     page,
     subtitle1,
     subtitle2,
-    description
+    description,
+    para2
   } = data.workJson
 
   return (
@@ -23,6 +24,7 @@ export default ({ data }) => {
         <h2>{subtitle1}</h2>
         <h2>{subtitle2}</h2>
         <p>{description}</p>
+        <p>{para2}</p>
           <div className={css.link_container}>
             <Link to='/about'>About</Link>
           </div>
@@ -38,6 +40,7 @@ query workQuery {
     subtitle1
     subtitle2
     description
+    para2
   }
 }
 `
