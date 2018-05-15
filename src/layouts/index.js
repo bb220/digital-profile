@@ -1,6 +1,7 @@
 import React from 'react'
 import css from './style.module.scss'
 import Footer from './footer'
+import Link from 'gatsby-link'
 
 export default ({ children, location, data }) => {
   return (

@@ -48,22 +48,3 @@
 .phrase p {
   margin: 10px 0;
 }
-
-.link_container {
-  bottom: 13vh;
-  right: 2rem;
-  text-align: center;
-  padding-top: 0.5rem;
-  margin-bottom: 0.5rem;
-
-  a {
-    display: inline-block;
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: #48b8fd;
-
-    &:not(:first-child) {
-      margin-left: 1.25rem;
-    }
-  }
-}

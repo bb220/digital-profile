@@ -2,9 +2,11 @@ import React from 'react'
 import css from './style.module.scss'
 import Link from 'gatsby-link'
 import TopSection from '../components/top-section'
+import NavBar from '../components/navbar'
 import Helmet from 'react-helmet'
 // TODO(bb220): use only one svg file
 import logoLarge from './logo-large.svg'
+import cx from 'classnames'
 
 export default ({ data }) => {
   const {
@@ -19,7 +21,12 @@ export default ({ data }) => {
         <meta name='description' content='At the intersection of Technology, Business, and Human Experience' />
         <meta name="google" content="nositelinkssearchbox" />
       </Helmet>
-      <TopSection className={css.home_color} logo={logoLarge}/>
+      <NavBar className={css.link_color}/>
+      <div className={css.home_logo}>
+        <Link to='/'>
+          <object className={cx(css.object, css.large)} type='image/svg+xml' data={logoLarge}></object>
+        </Link>
+      </div>
       <div className={css.content}>
         <h1 className={css.name}>{name}</h1>
         <p className={css.tagline}>{tagline}</p>

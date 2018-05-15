@@ -1,6 +1,7 @@
 import React from 'react'
 import css from './style.module.scss'
 import Link from 'gatsby-link'
+import NavBar from '../navbar'
 import cx from 'classnames'
 
 export default ({ subtitle, className, logo }) => {
@@ -10,8 +11,9 @@ export default ({ subtitle, className, logo }) => {
         [css.logo]: true,
         [className]: true
       })}>
+      <NavBar className={css.link_color} />
       <Link to='/'>
-        <object className={cx([css.object], { [css.large]: !subtitle })} type='image/svg+xml' data={logo}></object>
+        <object className={css.object} type='image/svg+xml' data={logo}></object>
       </Link>
     </div>
     <div className={cx({

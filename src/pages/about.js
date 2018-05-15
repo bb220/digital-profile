@@ -7,10 +7,13 @@ import logo from './logo.svg'
 export default ({ data }) => {
   const {
     page,
+    heading,
     para1,
     para2,
     para3,
-    para4
+    para4,
+    para5,
+    para6
   } = data.aboutJson
 
   return (
@@ -20,11 +23,13 @@ export default ({ data }) => {
       </Helmet>
       <TopSection subtitle={page} className={css.about_color} logo={logo} />
       <div className={css.content}>
-        <h2>Hello</h2>
+        <h2>{heading}</h2>
         <p>{para1}</p>
         <p>{para2}</p>
         <p>{para3}</p>
         <p>{para4}</p>
+        <p>{para5}</p>
+        <p>{para6}</p>
       </div>
   </div>
   )
@@ -38,6 +43,9 @@ query aboutQuery {
     para2
     para3
     para4
+    para5
+    para6
+    heading
   }
 }
 `
