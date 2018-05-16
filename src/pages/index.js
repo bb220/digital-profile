@@ -21,7 +21,6 @@ export default ({ data }) => {
         <meta name='description' content='At the intersection of Technology, Business, and Human Experience' />
         <meta name="google" content="nositelinkssearchbox" />
       </Helmet>
-      <NavBar className={css.link_color}/>
       <div className={css.home_logo}>
         <Link to='/'>
           <object className={cx(css.object, css.large)} type='image/svg+xml' data={logoLarge}></object>
@@ -30,6 +29,7 @@ export default ({ data }) => {
       <div className={css.content}>
         <h1 className={css.name}>{name}</h1>
         <p className={css.tagline}>{tagline}</p>
+        <NavBar className={css.link_color}/>
       </div>
   </div>
   )
