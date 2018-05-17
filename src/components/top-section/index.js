@@ -13,6 +13,7 @@ export default class TopSection extends Component {
   }
 
   componentDidMount() {
+    // TODO(bb220): optimize scroll listener
     window.addEventListener('scroll', this.onScroll)
   }
 
