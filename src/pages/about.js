@@ -10,10 +10,7 @@ export default ({ data }) => {
     heading,
     para1,
     para2,
-    para3,
-    para4,
-    para5,
-    para6
+    para3
   } = data.aboutJson
 
   return (
@@ -27,9 +24,6 @@ export default ({ data }) => {
         <p>{para1}</p>
         <p>{para2}</p>
         <p>{para3}</p>
-        <p>{para4}</p>
-        <p>{para5}</p>
-        <p>{para6}</p>
       </div>
   </div>
   )
@@ -42,9 +36,6 @@ query aboutQuery {
     para1
     para2
     para3
-    para4
-    para5
-    para6
     heading
   }
 }

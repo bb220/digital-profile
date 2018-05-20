@@ -2,6 +2,8 @@
   height: 35vh;
   position: relative;
   padding: 0 1rem;
+  max-width: 650px;
+  margin: 0 auto;
 
   h1, .subtitle {
     color: white;
@@ -21,6 +23,10 @@
   pointer-events: none;
 }
 
+.backdrop {
+  background-color: #3a96ec;
+}
+
 .large {
   display: block;
   margin: 0 auto;
@@ -33,6 +39,8 @@
   height: 4.5rem;
   position: fixed;
   z-index: 1;
+  display: flex;
+  justify-content: space-between;
 
   a {
     display: block;

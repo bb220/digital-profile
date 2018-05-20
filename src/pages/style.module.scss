@@ -12,7 +12,8 @@
 
 .content {
   padding: 0 2rem;
-  margin-bottom: 30vh;
+  max-width: 650px;
+  margin: 0 auto 30vh;
 
   h2 {
     &:not(:first-child) {
