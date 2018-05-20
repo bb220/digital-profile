@@ -18,6 +18,10 @@
   margin-bottom: 18rem;
 }
 
+.work_link {
+  margin-top: 0.3rem;
+}
+
 .content {
   padding: 0 2rem;
   max-width: 650px;
@@ -58,8 +62,11 @@
   background-color: #fff;
 }
 
-.link_color a {
+.link_color,
+.work_link {
+  a {
     color: #3a96ec;
+  }
 }
 
 .home_logo object {

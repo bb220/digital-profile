@@ -22,7 +22,9 @@ export default ({ data }) => {
       <TopSection subtitle={page} className={css.work_color} logo={logo} />
       <div className={cx(css.content, css.work_bottom)}>
         <h2>{subtitle1}</h2>
-        <h2>{subtitle2}</h2>
+        <p className={css.work_link}>
+          <a href='https://github.com/JCrew-Engineering'>{subtitle2}</a>
+        </p>
         <p>{description}</p>
         <p>{para2}</p>
       </div>
