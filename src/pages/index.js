@@ -2,7 +2,7 @@ import React from 'react'
 import css from './style.module.scss'
 import Link from 'gatsby-link'
 import TopSection from '../components/top-section'
-import NavBar from '../components/navbar'
+import NavLinks from '../components/nav-links'
 import Helmet from 'react-helmet'
 // TODO(bb220): use only one svg file
 import logoLarge from './logo-large.svg'
@@ -31,7 +31,7 @@ export default ({ data }) => {
       <div className={css.content}>
         <h1 className={css.name}>{name}</h1>
         <p className={css.tagline}>{tagline}</p>
-        <NavBar className={css.link_color}/>
+        <NavLinks className={css.link_color}/>
       </div>
   </div>
   )

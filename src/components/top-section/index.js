@@ -34,23 +34,14 @@ export default class TopSection extends Component {
     } = this.props
     const opacity = Math.min((30/ this.state.scrollHeight) -.3 , 1)
     return (
-      <div className={className}>
-        <div className={cx({
-            [css.logo]: true,
-            [className]: true
-          })}>
-          <Link to='/'>
-            <object className={css.object} type='image/svg+xml' data={logo}></object>
-          </Link>
-          <NavBar className={css.link_color} />
-        </div>
         <div
           className={cx({
             [css.top]: true,
             [className]: true
           })}>
-            <h3 style={'opacity', {opacity}}className={css.subtitle}>{subtitle}</h3>
-        </div>
+          <div className={css.subtitle_container}>
+            <h3 style={'opacity', {opacity}} className={css.subtitle}>{subtitle}</h3>
+          </div>
       </div>
     )
   }

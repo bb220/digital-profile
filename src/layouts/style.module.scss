@@ -1,6 +1,43 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400');
 
+.logo {
+  height: 4.5rem;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    display: block;
+  }
+}
+
+.navbar {
+  position: fixed;
+}
+
+.object {
+  pointer-events: none;
+}
+
+
+.link_color a {
+    color: white;
+}
+
+
 .app_container {
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
+}
+
+.blue {
+  background-color: #3a96ec;
+}
+
+.green {
+  background-color: #51b25c;
+}
+
+.white {
+  background-color: #fff;
 }

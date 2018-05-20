@@ -1,0 +1,18 @@
+.link_container {
+  right: 2rem;
+  text-align: right;
+  padding-top: 0.6rem;
+  padding-right: 1rem;
+  z-index: 2;
+
+  a {
+    display: inline-block;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    text-decoration: none;
+
+    &:not(:first-child) {
+      margin-left: 1.25rem;
+    }
+  }
+}

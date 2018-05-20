@@ -2,7 +2,6 @@ import React from 'react'
 import css from './style.module.scss'
 import TopSection from '../components/top-section'
 import Helmet from 'react-helmet'
-import logo from './logo.svg'
 import cx from 'classnames'
 
 export default ({ data }) => {
@@ -19,7 +18,7 @@ export default ({ data }) => {
       <Helmet>
         <title>Brandon Bellero | Work</title>
       </Helmet>
-      <TopSection subtitle={page} className={css.work_color} logo={logo} />
+      <TopSection subtitle={page} className={css.work_color} />
       <div className={cx(css.content, css.work_bottom)}>
         <h2>{subtitle1}</h2>
         <p className={css.work_link}>

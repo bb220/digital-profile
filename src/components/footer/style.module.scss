@@ -4,17 +4,10 @@
   box-shadow: $top $left $blur $radius $color;
 }
 
-.icon {
-  width: 30px;
-  height: 30px;
-  border: 1px solid grey;
-  margin-left: 10px;
-  flex: 0.2
-}
-
 .footer {
   position: fixed;
   bottom: 0;
+  padding-bottom: 5px;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -39,7 +32,6 @@
 }
 
 .line {
-  height: 1px;
   margin: 0 auto;
   @include box-shadow(0, 0px, 18px, 18px, white);
 }
@@ -51,5 +43,5 @@
 }
 
 .phrase p {
-  margin: 10px 0;
+  margin: 9px 0 10px;
 }
