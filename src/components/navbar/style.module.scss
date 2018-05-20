@@ -1,14 +1,15 @@
 .link_container {
-  display: flex;
   right: 2rem;
   text-align: right;
   padding-top: 0.5rem;
   margin-bottom: 0.5rem;
+  margin-right: 1rem;
   z-index: 2;
 
   a {
     display: inline-block;
     font-size: 1.5rem;
+    line-height: 3rem;
     text-decoration: none;
 
     &:not(:first-child) {
