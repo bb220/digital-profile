@@ -6,6 +6,7 @@ import NavBar from '../components/navbar'
 import Helmet from 'react-helmet'
 // TODO(bb220): use only one svg file
 import logoLarge from './logo-large.svg'
+import favicon from './favicon.png'
 import cx from 'classnames'
 
 export default ({ data }) => {
@@ -17,9 +18,10 @@ export default ({ data }) => {
   return (
     <div>
       <Helmet>
-        <title>Brandon Bellero</title>
+      <title>Brandon Bellero | At the intersection of Technology, Business, and Human Experience</title>
+        <link rel='icon' type='image/png' href={favicon} />
         <meta name='description' content='At the intersection of Technology, Business, and Human Experience' />
-        <meta name="google" content="nositelinkssearchbox" />
+        <meta name='google' content='nositelinkssearchbox' />
       </Helmet>
       <div className={css.home_logo}>
         <Link to='/'>
