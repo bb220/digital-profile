@@ -3,6 +3,7 @@ import css from './style.module.scss'
 import TopSection from '../components/top-section'
 import Helmet from 'react-helmet'
 import logo from './logo.svg'
+import cx from 'classnames'
 
 export default ({ data }) => {
   const {
@@ -19,7 +20,7 @@ export default ({ data }) => {
         <title>Brandon Bellero | About</title>
       </Helmet>
       <TopSection subtitle={page} className={css.about_color} logo={logo} />
-      <div className={css.content}>
+      <div className={cx(css.content, css.about_bottom)}>
         <h2>{heading}</h2>
         <p>{para1}</p>
         <p>{para2}</p>

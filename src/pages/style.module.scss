@@ -10,10 +10,19 @@
   font-size: 1.7rem;
 }
 
+.about_bottom {
+  margin-bottom: 10rem;
+}
+
+.work_bottom {
+  margin-bottom: 18rem;
+}
+
 .content {
   padding: 0 2rem;
   max-width: 650px;
-  margin: 0 auto 30vh;
+  margin-left: auto;
+  margin-right: auto;
 
   h2 {
     &:not(:first-child) {
