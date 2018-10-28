@@ -3,7 +3,7 @@
 ## Development
 Built with [Gatsby](https://www.gatsbyjs.org/)
 
-`gatsby build`
+`gatsby build` to generate `/public` directory
 
 
 ## Deployment
