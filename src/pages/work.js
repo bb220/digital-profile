@@ -41,6 +41,7 @@ query workQuery {
       location
       description
       para2
+      site
     }
   }
 }
