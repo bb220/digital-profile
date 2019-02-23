@@ -3,10 +3,9 @@ import css from './style.module.scss'
 import TopSection from '../components/top-section'
 import Helmet from 'react-helmet'
 import cx from 'classnames'
-import Layout from '../components/layout'
 import { StaticQuery, graphql } from 'gatsby'
 
-export default ({ location }) => {
+export default () => {
   return (
     <StaticQuery
       query={
@@ -22,7 +21,6 @@ export default ({ location }) => {
           }
         `}
       render={data => (
-        <Layout location={location}>
           <div>
             <Helmet>
               <title>Brandon Bellero | About</title>
@@ -35,7 +33,6 @@ export default ({ location }) => {
               <p>{data.aboutJson.para3}</p>
             </div>
           </div>
-        </Layout>
       )}
     />
   )

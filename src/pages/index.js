@@ -5,11 +5,10 @@ import Helmet from 'react-helmet'
 // TODO(bb220): use only one svg file
 import logoLarge from './logo-large.svg'
 import favicon from './favicon.png'
-import Layout from '../components/layout'
 import cx from 'classnames'
 import { StaticQuery, graphql } from 'gatsby'
 
-export default ({ location }) => {
+export default () => {
   return (
     <StaticQuery
       query={
@@ -22,7 +21,6 @@ export default ({ location }) => {
           }
         `}
       render={data => (
-        <Layout location={location}>
           <div>
             <Helmet>
               <title>Brandon Bellero | At the intersection of Technology, Business, and Human Experience</title>
@@ -40,7 +38,6 @@ export default ({ location }) => {
               <p className={css.tagline}>{data.homeJson.tagline}</p>
             </div>
           </div>
-        </Layout>
       )}
     />
   )
