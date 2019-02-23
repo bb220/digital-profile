@@ -5,10 +5,11 @@ import Helmet from 'react-helmet'
 // TODO(bb220): use only one svg file
 import logoLarge from './logo-large.svg'
 import favicon from './favicon.png'
+import Layout from '../components/layout'
 import cx from 'classnames'
 import { StaticQuery, graphql } from 'gatsby'
 
-export default () => {
+export default ({ location }) => {
   return (
     <StaticQuery
       query={
@@ -21,23 +22,25 @@ export default () => {
           }
         `}
       render={data => (
-        <div>
-          <Helmet>
-            <title>Brandon Bellero | At the intersection of Technology, Business, and Human Experience</title>
-            <link rel='icon' type='image/png' href={favicon} />
-            <meta name='description' content='At the intersection of Technology, Business, and Human Experience' />
-            <meta name='google' content='nositelinkssearchbox' />
-          </Helmet>
-          <div className={css.home_logo}>
-            <Link to='/'>
-              <object className={cx(css.object, css.large)} type='image/svg+xml' data={logoLarge}></object>
-            </Link>
+        <Layout location={location}>
+          <div>
+            <Helmet>
+              <title>Brandon Bellero | At the intersection of Technology, Business, and Human Experience</title>
+              <link rel='icon' type='image/png' href={favicon} />
+              <meta name='description' content='At the intersection of Technology, Business, and Human Experience' />
+              <meta name='google' content='nositelinkssearchbox' />
+            </Helmet>
+            <div className={css.home_logo}>
+              <Link to='/'>
+                <object className={cx(css.object, css.large)} type='image/svg+xml' data={logoLarge}></object>
+              </Link>
+            </div>
+            <div className={cx(css.content, css.center)}>
+              <h1 className={css.name}>{data.homeJson.name}</h1>
+              <p className={css.tagline}>{data.homeJson.tagline}</p>
+            </div>
           </div>
-          <div className={cx(css.content, css.center)}>
-            <h1 className={css.name}>{data.homeJson.name}</h1>
-            <p className={css.tagline}>{data.homeJson.tagline}</p>
-          </div>
-        </div>
+        </Layout>
       )}
     />
   )
