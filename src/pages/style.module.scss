@@ -37,6 +37,10 @@
   }
 }
 
+.center {
+  text-align: center;
+}
+
 .name, .tagline {
   font-weight: normal;
 }
@@ -69,7 +73,10 @@
   }
 }
 
-.home_logo object {
+.home_logo {
+  padding-top: 3rem;
+  object {
   display: block;
   margin: 0 auto;
+  }
 }

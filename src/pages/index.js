@@ -1,7 +1,6 @@
 import React from 'react'
 import css from './style.module.scss'
 import Link from 'gatsby-link'
-import TopSection from '../components/top-section'
 import NavLinks from '../components/nav-links'
 import Helmet from 'react-helmet'
 // TODO(bb220): use only one svg file
@@ -28,10 +27,9 @@ export default ({ data }) => {
           <object className={cx(css.object, css.large)} type='image/svg+xml' data={logoLarge}></object>
         </Link>
       </div>
-      <div className={css.content}>
+      <div className={cx(css.content, css.center)}>
         <h1 className={css.name}>{name}</h1>
         <p className={css.tagline}>{tagline}</p>
-        <NavLinks className={css.link_color}/>
       </div>
   </div>
   )

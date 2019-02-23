@@ -47,6 +47,9 @@
   z-index: 1;
   position: fixed;
   width: 100%;
+  @media only screen  and (min-width : 1224px) {
+    justify-content: space-around;
+  }
 }
 
 .app_container {
