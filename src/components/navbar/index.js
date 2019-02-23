@@ -12,7 +12,7 @@ export default ({ className }) => {
           [css.logo]: true
         })}>
         <Link to='/'>
-          <object className={css.object} type='image/svg+xml' data={logo}></object>
+          <object className={css.object} type='image/svg+xml' data={logo} aria-label='personal-logo'></object>
         </Link>
       </div>
       <NavLinks />

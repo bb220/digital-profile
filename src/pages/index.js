@@ -30,7 +30,7 @@ export default () => {
             </Helmet>
             <div className={css.home_logo}>
               <Link to='/'>
-                <object className={cx(css.object, css.large)} type='image/svg+xml' data={logoLarge}></object>
+                <object className={cx(css.object, css.large)} type='image/svg+xml' data={logoLarge} aria-label='personal-logo'></object>
               </Link>
             </div>
             <div className={cx(css.content, css.center)}>
