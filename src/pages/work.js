@@ -4,8 +4,9 @@ import TopSection from '../components/top-section'
 import Helmet from 'react-helmet'
 import cx from 'classnames'
 import { StaticQuery, graphql } from 'gatsby'
+import Layout from '../components/layout'
 
-export default () => {
+export default ({ location }) => {
   return (
     <StaticQuery
       query={
@@ -24,24 +25,26 @@ export default () => {
           }
         `}
       render={data => (
-        <div>
-          <Helmet>
-            <title>Brandon Bellero | Work</title>
-          </Helmet>
-          <TopSection subtitle={data.workJson.page} className={css.work_color} />
-          <div className={cx(css.content, css.work_bottom)}>
-            {data.workJson.history.map((position, index) =>
-              <div key={index}>
-                <h2>{position.title}</h2>
-                <p className={css.work_link}>
-                  <a href={position.site}>{position.location}</a>
-                </p>
-                <p>{position.description}</p>
-                <p>{position.para2}</p>
-              </div>
-            )}
+        <Layout location={location}>
+          <div>
+            <Helmet>
+              <title>Brandon Bellero | Work</title>
+            </Helmet>
+            <TopSection subtitle={data.workJson.page} className={css.work_color} />
+            <div className={cx(css.content, css.work_bottom)}>
+              {data.workJson.history.map((position, index) =>
+                <div key={index}>
+                  <h2>{position.title}</h2>
+                  <p className={css.work_link}>
+                    <a href={position.site}>{position.location}</a>
+                  </p>
+                  <p>{position.description}</p>
+                  <p>{position.para2}</p>
+                </div>
+              )}
+            </div>
           </div>
-        </div>
+        </Layout>
       )}
     />
   )
