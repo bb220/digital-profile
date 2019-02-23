@@ -3,46 +3,52 @@ import css from './style.module.scss'
 import TopSection from '../components/top-section'
 import Helmet from 'react-helmet'
 import cx from 'classnames'
+import Layout from '../components/layout'
+import { StaticQuery, graphql } from 'gatsby'
 
-export default ({ data }) => {
-  const {
-    page,
-    history
-  } = data.workJson
-
+export default ({ location }) => {
   return (
-    <div>
-      <Helmet>
-        <title>Brandon Bellero | Work</title>
-      </Helmet>
-      <TopSection subtitle={page} className={css.work_color} />
-      <div className={cx(css.content, css.work_bottom)}>
-        {history.map((position, index) =>
-          <div key={index}>
-            <h2>{position.title}</h2>
-            <p className={css.work_link}>
-              <a href={position.site}>{position.location}</a>
-            </p>
-            <p>{position.description}</p>
-            <p>{position.para2}</p>
+    <StaticQuery
+      query={
+        graphql`
+          query workQuery {
+            workJson {
+              page
+              history {
+                title
+                location
+                description
+                para2
+                site
+              }
+            }
+          }
+        `}
+      render={data => (
+        <Layout
+          location={location}
+          linkColor={css.default_link}
+        >
+          <div>
+            <Helmet>
+              <title>Brandon Bellero | Work</title>
+            </Helmet>
+            <TopSection subtitle={data.workJson.page} className={css.work_color} />
+            <div className={cx(css.content, css.work_bottom)}>
+              {data.workJson.history.map((position, index) =>
+                <div key={index}>
+                  <h2>{position.title}</h2>
+                  <p className={css.work_link}>
+                    <a href={position.site}>{position.location}</a>
+                  </p>
+                  <p>{position.description}</p>
+                  <p>{position.para2}</p>
+                </div>
+              )}
+            </div>
           </div>
-        )}
-      </div>
-    </div>
+        </Layout>
+      )}
+    />
   )
 }
-
-export const query = graphql`
-query workQuery {
-  workJson {
-    page
-    history {
-      title
-      location
-      description
-      para2
-      site
-    }
-  }
-}
-`

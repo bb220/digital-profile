@@ -1,6 +1,6 @@
 import React from 'react'
 import css from './style.module.scss'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import cx from 'classnames'
 
 export default ({ className }) => {

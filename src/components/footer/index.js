@@ -13,13 +13,13 @@ export default function Footer ({ data }) {
           <p>Let's collaborate.</p>
         </div>
         <a href={data.linkedInUrl}>
-          <img src={linkedIn} />
+          <img src={linkedIn} alt='linked-in'/>
         </a>
         <a href={`mailto:${data.email}`}>
-          <img className={css.email} src={email} />
+          <img className={css.email} src={email} alt='email' />
         </a>
         <a href={data.github}>
-          <img src={gh} />
+          <img src={gh} alt='github' />
         </a>
       </div>
     </footer>
