@@ -20,7 +20,10 @@ export default ({ location }) => {
           }
         `}
       render={data => (
-        <Layout location={location}>
+        <Layout 
+          location={location}
+          linkColor={css.home_link}
+        >
           <div>
             <Helmet>
               <title>Brandon Bellero | At the intersection of Technology, Business, and Human Experience</title>
