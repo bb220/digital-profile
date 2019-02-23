@@ -2,7 +2,6 @@ import React from 'react'
 import css from './style.module.scss'
 import { Link } from 'gatsby'
 import cx from 'classnames'
-import logo from './logo.svg'
 import NavLinks from '../nav-links'
 
 export default ({ className }) => {
