@@ -21,7 +21,7 @@ export default ({ data }) => {
           <div key={index}>
             <h2>{position.title}</h2>
             <p className={css.work_link}>
-              <a href={position.site}>{position.location}</a>
+              <a href={position.site} target="_blank">{position.location}</a>
             </p>
             <p>{position.description}</p>
             <p>{position.para2}</p>
