@@ -1,6 +1,6 @@
 import React from 'react'
 import css from './style.module.scss'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 // TODO(bb220): use only one svg file
 import logoLarge from './logo-large.svg'

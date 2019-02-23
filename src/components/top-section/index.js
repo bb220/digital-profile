@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import css from './style.module.scss'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import NavBar from '../navbar'
 import cx from 'classnames'
 
