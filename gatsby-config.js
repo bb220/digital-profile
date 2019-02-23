@@ -31,12 +31,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-json`,
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-layout`,
-      options: {
-        component: require.resolve(`./src/components/layout/`)
-      }
-    }
+    `gatsby-plugin-react-helmet`
   ]
 }

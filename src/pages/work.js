@@ -3,6 +3,7 @@ import css from './style.module.scss'
 import TopSection from '../components/top-section'
 import Helmet from 'react-helmet'
 import cx from 'classnames'
+import Layout from '../components/layout'
 import { StaticQuery, graphql } from 'gatsby'
 
 export default ({ location }) => {
@@ -24,6 +25,7 @@ export default ({ location }) => {
           }
         `}
       render={data => (
+        <Layout location={location}>
           <div>
             <Helmet>
               <title>Brandon Bellero | Work</title>
@@ -42,6 +44,7 @@ export default ({ location }) => {
               )}
             </div>
           </div>
+        </Layout>
       )}
     />
   )

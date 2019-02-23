@@ -4,9 +4,10 @@ import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import favicon from './favicon.png'
 import cx from 'classnames'
+import Layout from '../components/layout'
 import { StaticQuery, graphql } from 'gatsby'
 
-export default () => {
+export default ({ location }) => {
   return (
     <StaticQuery
       query={
@@ -19,6 +20,7 @@ export default () => {
           }
         `}
       render={data => (
+        <Layout location={location}>
           <div>
             <Helmet>
               <title>Brandon Bellero | At the intersection of Technology, Business, and Human Experience</title>
@@ -36,6 +38,7 @@ export default () => {
               <p className={css.tagline}>{data.homeJson.tagline}</p>
             </div>
           </div>
+        </Layout>
       )}
     />
   )
