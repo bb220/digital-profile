@@ -7,10 +7,7 @@ import cx from 'classnames'
 export default ({ data }) => {
   const {
     page,
-    subtitle1,
-    subtitle2,
-    description,
-    para2
+    history
   } = data.workJson
 
   return (
@@ -20,12 +17,16 @@ export default ({ data }) => {
       </Helmet>
       <TopSection subtitle={page} className={css.work_color} />
       <div className={cx(css.content, css.work_bottom)}>
-        <h2>{subtitle1}</h2>
-        <p className={css.work_link}>
-          <a href='https://github.com/JCrew-Engineering'>{subtitle2}</a>
-        </p>
-        <p>{description}</p>
-        <p>{para2}</p>
+        {history.map((position, index) =>
+          <div key={index}>
+            <h2>{position.title}</h2>
+            <p className={css.work_link}>
+              <a href={position.site}>{position.location}</a>
+            </p>
+            <p>{position.description}</p>
+            <p>{position.para2}</p>
+          </div>
+        )}
       </div>
     </div>
   )
@@ -35,10 +36,12 @@ export const query = graphql`
 query workQuery {
   workJson {
     page
-    subtitle1
-    subtitle2
-    description
-    para2
+    history {
+      title
+      location
+      description
+      para2
+    }
   }
 }
 `

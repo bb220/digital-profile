@@ -1,7 +1,10 @@
 {
   "page" : "work",
-  "subtitle1": "Product Engineering",
-  "subtitle2": "@JCrew-Engineering",
-  "description": "I currently specialize in ecommerce product engineering as the Technical Product Owner for J.Crew's new frictionless checkout experience.",
-  "para2": "We are using modern technologies to deliver fast, scalable, and high-quality retail experiences."
+  "history": [{
+    "title": "Product Engineering",
+    "location": "@JCrew-Engineering",
+    "description": "At J.Crew, I helped launch a cloud-based API, a new checkout user experience, and various features throughout the e-commerce platform as a technical product owner and developer.",
+    "para2": "",
+    "site": "https://github.com/JCrew-Engineering"
+  }]
 }
