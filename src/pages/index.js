@@ -22,7 +22,7 @@ export default ({ location }) => {
       render={data => (
         <Layout 
           location={location}
-          linkColor={css.home_link}
+          styleProps={{ linkColor: css.home_link }}
         >
           <div>
             <Helmet>

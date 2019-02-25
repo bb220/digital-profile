@@ -21,11 +21,13 @@ export default ({ location }) => {
             }
           }
         `}
-      render={data => (
-        <Layout
-          location={location}
-          linkColor={css.default_link}
-        >
+      render={data => {
+        const styleProps = {
+          linkColor: css.default_link,
+          backColor: css.blue
+        }
+        return (
+        <Layout location={location} styleProps={styleProps}>
           <div>
             <Helmet>
               <title>Brandon Bellero | About</title>
@@ -38,8 +40,8 @@ export default ({ location }) => {
               <p>{data.aboutJson.para3}</p>
             </div>
           </div>
-        </Layout>
-      )}
+        </Layout>);
+      }}
     />
   )
 }

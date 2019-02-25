@@ -5,7 +5,7 @@ import NavBar from '../navbar'
 import cx from 'classnames'
 import { StaticQuery, graphql } from 'gatsby'
 
-export default ({ children, linkColor}) => {
+export default ({ children, styleProps}) => {
     return (
         <StaticQuery
             query={
@@ -20,7 +20,7 @@ export default ({ children, linkColor}) => {
             `}
             render={data => (
                 <div className={css.app_container}>
-                    <NavBar className={cx(linkColor)} />
+                    <NavBar className={cx(styleProps.linkColor, styleProps.backColor)} />
                     <div className={css.bottom}>
                         {children}
                     </div>
