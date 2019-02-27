@@ -1,13 +1,5 @@
 # My personal website
 
 ## Development
-Built with [Gatsby](https://www.gatsbyjs.org/)
+Built with [Gatsby](https://www.gatsbyjs.org/), hosted on [Firebase](https://firebase.google.com/docs/hosting/deploying)
 
-`gatsby build` to generate `/public` directory
-
-
-## Deployment
-
-Hosted on [Firebase](https://firebase.google.com/docs/hosting/deploying)
-
-`firebase deploy`
