@@ -1,10 +1,19 @@
 {
   "page" : "work",
   "history": [{
+      "title": "Technical Product Management",
+      "location": "@LeafLink",
+      "description": "At LeafLink, we are building the largest online marketplace for wholesale cannabis.",
+      "para2": "",
+      "site": "https://leaflink.com/",
+      "time":"2019 - "
+    },
+    {
     "title": "Product Engineering",
     "location": "@JCrew-Engineering",
     "description": "At J.Crew, I helped launch a cloud-based API, a new checkout user experience, and various features on the e-commerce platform as a technical product owner and developer.",
     "para2": "",
-    "site": "https://github.com/JCrew-Engineering"
+    "site": "https://github.com/JCrew-Engineering",
+    "time": "2015 - 2019"
   }]
 }
