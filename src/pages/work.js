@@ -20,7 +20,6 @@ export default ({ location }) => {
                 description
                 para2
                 site
-                time
               }
             }
           }
@@ -42,7 +41,6 @@ export default ({ location }) => {
                 <h2>{position.title}</h2>
                 <p className={css.work_link}>
                   <a href={position.site}>{position.location}</a>
-                  <p className={css.time_range}>{position.time}</p>
                 </p>
                 <p>{position.description}</p>
                 <p>{position.para2}</p>
