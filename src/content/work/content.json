@@ -1,10 +1,19 @@
 {
   "page" : "work",
-  "history": [{
+  "history": [
+    {
+      "title": "Product Management",
+      "location": "@LeafLink",
+      "description": "At one of Fast Company’s most innovative companies, I am a member of the product management team working on LeafLink’s B2B marketplace technology.  As a technical product manager, I drive product strategy and execution for various features and services on our platform.",
+      "para2": "",
+      "site": "https://leaflink.com/"
+    },
+    {
     "title": "Product Engineering",
-    "location": "@JCrew-Engineering",
-    "description": "At J.Crew, I helped launch a cloud-based API, a new checkout user experience, and various features on the e-commerce platform as a technical product owner and developer.",
+    "location": "@JCrew",
+    "description": "At the historied retailer, I was a member of the ecommerce team that delivered modern solutions for JCrew’s growing online B2C sales channel.  I helped launch a cloud-based API, a new checkout user experience, and various features on the e-commerce platform as a technical product owner and developer.",
     "para2": "",
-    "site": "https://github.com/JCrew-Engineering"
-  }]
+    "site": "https://www.jcrew.com/"
+    }
+  ]
 }

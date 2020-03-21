@@ -16,7 +16,6 @@ export default ({ location }) => {
               page
               para1
               para2
-              para3
               heading
             }
           }
@@ -37,7 +36,6 @@ export default ({ location }) => {
               <h2>{data.aboutJson.heading}</h2>
               <p>{data.aboutJson.para1}</p>
               <p>{data.aboutJson.para2}</p>
-              <p>{data.aboutJson.para3}</p>
             </div>
           </div>
         </Layout>);
