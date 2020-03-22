@@ -26,9 +26,9 @@ export default ({ location }) => {
         >
           <div>
             <Helmet>
-              <title>Brandon Bellero | At the intersection of technology, business, and design</title>
+              <title>Brandon Bellero | At the intersection of technology, business, and design.</title>
               <link rel='icon' type='image/png' href={favicon} />
-              <meta name='description' content='At the intersection of technology, business, and design' />
+              <meta name='description' content='At the intersection of technology, business, and design.' />
               <meta name='google' content='nositelinkssearchbox' />
             </Helmet>
             <div className={css.home_logo}>
