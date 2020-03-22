@@ -9,11 +9,8 @@ export default function Footer ({ data }) {
     <footer className={css.footer}>
       <div className={css.line}></div>
       <div className={css.contact_container}>
-        <div className={css.phrase}>
-          <p>Let's collaborate.</p>
-        </div>
         <a href={data.linkedInUrl}>
-          <img src={linkedIn} alt='linked-in'/>
+          <img className={css.linked} src={linkedIn} alt='linked-in'/>
         </a>
         <a href={`mailto:${data.email}`}>
           <img className={css.email} src={email} alt='email' />

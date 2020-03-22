@@ -8,6 +8,8 @@
   position: fixed;
   bottom: 0;
   padding-bottom: 5px;
+  padding-left: 2rem;
+  padding-right: 2rem;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -17,6 +19,10 @@
   .email {
     height: 41px;
     padding-top: 0;
+  }
+
+  .linked {
+    margin-left: 0;
   }
 
   img {
@@ -38,10 +44,6 @@
 
 .contact_container {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   flex-direction: row;
-}
-
-.phrase p {
-  margin: 9px 0 10px;
 }

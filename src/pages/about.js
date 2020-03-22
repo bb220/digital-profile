@@ -15,10 +15,6 @@ export default ({ location }) => {
             aboutJson {
               page
               para1
-              para2
-              para3
-              para4
-              para5
               heading
             }
           }
@@ -38,18 +34,6 @@ export default ({ location }) => {
             <div className={cx(css.content, css.about_bottom)}>
               <h2>{data.aboutJson.heading}</h2>
               <p>{data.aboutJson.para1}</p>
-              <ul>
-                <li>
-                  <p>{data.aboutJson.para2}</p>
-                </li>
-                <li>
-                  <p>{data.aboutJson.para3}</p>
-                </li>
-                <li>
-                  <p>{data.aboutJson.para4}</p>
-                </li>
-              </ul>
-              <p>{data.aboutJson.para5}</p>
             </div>
           </div>
         </Layout>);
