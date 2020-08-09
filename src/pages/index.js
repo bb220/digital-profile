@@ -1,6 +1,5 @@
 import React from 'react'
 import css from './style.module.scss'
-import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import favicon from './favicon.png'
 import cx from 'classnames'
