@@ -21,7 +21,6 @@ export default ({ children, styleProps}) => {
                     <div className={css.bottom}>
                         {children}
                     </div>
-                    <Footer data={data.footerJson} />
                 </div>
             )}
         />
