@@ -1,6 +1,5 @@
 import React from 'react'
 import css from './style.module.scss'
-import Footer from '../footer'
 import { StaticQuery, graphql } from 'gatsby'
 
 export default ({ children, styleProps}) => {
