@@ -4,6 +4,9 @@ import Helmet from 'react-helmet'
 import favicon from './favicon.png'
 import cx from 'classnames'
 import Layout from '../components/layout'
+import linkedIn from './linkedin.png'
+import email from './email.png'
+import gh from './gh.png'
 import { StaticQuery, graphql } from 'gatsby'
 
 export default ({ location }) => {
@@ -15,6 +18,9 @@ export default ({ location }) => {
             homeJson {
               name
               tagline
+              linkedInUrl
+              email
+              github
             }
           }
         `}
@@ -36,6 +42,17 @@ export default ({ location }) => {
             <div className={cx(css.content, css.center)}>
               <h1 className={css.name}>{data.homeJson.name}</h1>
               <p className={css.tagline}>{data.homeJson.tagline}</p>
+              <div className={css.link_container}>
+                <a href={data.homeJson.linkedInUrl}>
+                  <img className={css.linked} src={linkedIn} alt='linked-in' />
+                </a>
+                <a href={`mailto:${data.homeJson.email}`}>
+                  <img className={css.email} src={email} alt='email' />
+                </a>
+                <a href={data.homeJson.github}>
+                  <img src={gh} alt='github' />
+                </a>
+              </div>
             </div>
           </div>
         </Layout>
