@@ -1,6 +1,5 @@
 import React from 'react'
 import css from './style.module.scss'
-import Footer from '../footer'
 import { StaticQuery, graphql } from 'gatsby'
 
 export default ({ children, styleProps}) => {
@@ -21,7 +20,6 @@ export default ({ children, styleProps}) => {
                     <div className={css.bottom}>
                         {children}
                     </div>
-                    <Footer data={data.footerJson} />
                 </div>
             )}
         />

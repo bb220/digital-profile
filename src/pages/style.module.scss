@@ -91,3 +91,28 @@
 .green {
   background-color: #51b25c;
 }
+
+.link_container {
+  display: flex;
+  justify-content: flex-end;
+
+  .email {
+    height: 41px;
+    padding-top: 0;
+  }
+
+  .linked {
+    margin-left: 0;
+  }
+
+  img {
+    height: 35px;
+    margin-left: 1rem;
+    margin-top: -2px;
+    padding-top: 3px;
+
+    :not(:nth-child(2n)) {
+      padding-top: 3px;
+    }
+  }
+}
