@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "gatsby": "^2.1.17",
+    "gatsby": "^2.32.13",
     "gatsby-plugin-react-helmet": "^3.0.6",
     "gatsby-plugin-sass": "^2.0.10",
     "gatsby-source-filesystem": "^2.0.22",
